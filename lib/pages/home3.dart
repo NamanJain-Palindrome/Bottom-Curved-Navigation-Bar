@@ -17,7 +17,7 @@ class _HomePage3 extends State<HomePage3> {
 
       //
       body: Center(
-        child: Text('Page 3 aagaya'),
+        child: Text('Page 3'),
       ),
     );
   }
