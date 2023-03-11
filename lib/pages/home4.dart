@@ -12,12 +12,42 @@ class _HomePage4 extends State<HomePage4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home4'),
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
+        centerTitle: true,
+        elevation: 15,
+        title: Text('School'),
       ),
 
       // //
-      body: Center(
-        child: Text('Page 4'),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.network(
+                'https://news.mit.edu/sites/default/files/images/202003/ChristopherHarting-2-Dome_1.jpg',
+                width: double.infinity,
+                height: 200,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(height: 32),
+            const Text(
+              'MIT',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 4),
+            const Text(
+              'University',
+              style: TextStyle(fontSize: 20),
+            ),
+          ],
+        ),
       ),
     );
   }

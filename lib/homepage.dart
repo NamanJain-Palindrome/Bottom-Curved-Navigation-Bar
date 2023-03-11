@@ -21,71 +21,45 @@ class _HomePageState extends State<HomePage> {
     HomePage3(),
     HomePage4(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-      //
-
-      /*
-      //-----------------------AppBar----------------------------STARTS----------------------
-      appBar: AppBar(
-        title: Text(
-          'Bottom Nav',
-          style: TextStyle(color: Colors.yellow),
-        ),
-        backgroundColor: Colors.black,
-      ),
-      //-----------------------AppBar----------------------------ENDS----------------------
-      */
-
-      //
-
       //------------------------------Body------------------------START----------------
       body: screens[index],
       //------------------------------Body------------------------ENDS----------------
-
-      //
-
       //---------------------------Botton Nav Bar-----------------START-------------
-
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.black,
-        color: Colors.grey.shade300,
+        height: 60,
+        backgroundColor: Colors.white,
+        color: Color.fromARGB(255, 9, 28, 55),
         animationDuration: Duration(milliseconds: 300),
         items: <Widget>[
           Icon(
             Icons.home,
-            color: Colors.black,
-            size: 30,
+            color: Colors.white,
+            size: 25,
           ),
           Icon(
-            Icons.auto_graph_outlined,
-            color: Colors.black,
-            size: 30,
+            Icons.security,
+            color: Colors.white,
+            size: 25,
           ),
           Icon(
-            Icons.history,
-            color: Colors.black,
-            size: 30,
+            Icons.work,
+            color: Colors.white,
+            size: 25,
           ),
           Icon(
-            Icons.person,
-            color: Colors.black,
-            size: 30,
+            Icons.school,
+            color: Colors.white,
+            size: 25,
           ),
         ],
         index: index,
-
-        //
-
-        // ontap() ----- method
-
         onTap: (index) => setState(() => this.index = index),
-
-        //
       ),
-
       //---------------------------Botton Nav Bar-----------------ENDS-------------
     );
   }
