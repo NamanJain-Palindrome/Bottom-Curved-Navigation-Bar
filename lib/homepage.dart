@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
-}
+} //Stateful Widget
 
 class _HomePageState extends State<HomePage> {
   int index = 0;
@@ -42,27 +42,27 @@ class _HomePageState extends State<HomePage> {
             Icons.home,
             color: Colors.white,
             size: 25,
-          ),
+          ), //Icon
           Icon(
             Icons.security,
             color: Colors.white,
             size: 25,
-          ),
+          ), //Icon
           Icon(
             Icons.work,
             color: Colors.white,
             size: 25,
-          ),
+          ), //Icon
           Icon(
             Icons.school,
             color: Colors.white,
             size: 25,
-          ),
+          ), //Icon
         ],
         index: index,
         onTap: (index) => setState(() => this.index = index),
-      ),
+      ), //CurvedNavigationbar
       //---------------------------Botton Nav Bar-----------------ENDS-------------
-    );
-  }
-}
+    ); //Scaffold
+  } //build
+} //setState

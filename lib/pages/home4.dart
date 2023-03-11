@@ -5,7 +5,7 @@ class HomePage4 extends StatefulWidget {
 
   @override
   State<HomePage4> createState() => _HomePage4();
-}
+} //Stateful Widget
 
 class _HomePage4 extends State<HomePage4> {
   @override
@@ -16,7 +16,7 @@ class _HomePage4 extends State<HomePage4> {
         centerTitle: true,
         elevation: 15,
         title: Text('School'),
-      ),
+      ), //AppBar
 
       // //
       body: Padding(
@@ -31,24 +31,24 @@ class _HomePage4 extends State<HomePage4> {
                 width: double.infinity,
                 height: 200,
                 fit: BoxFit.cover,
-              ),
-            ),
+              ), //Image.network
+            ), //ClipRRect
             const SizedBox(height: 32),
             const Text(
               'MIT',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-              ),
-            ),
+              ), //TestStyle
+            ), //Text
             const SizedBox(height: 4),
             const Text(
               'University',
               style: TextStyle(fontSize: 20),
-            ),
+            ), //Text
           ],
-        ),
-      ),
-    );
-  }
-}
+        ), //Column
+      ), //Padding
+    ); //Scaffold
+  } //build
+} //setState

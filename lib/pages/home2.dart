@@ -5,7 +5,7 @@ class HomePage2 extends StatefulWidget {
 
   @override
   State<HomePage2> createState() => _HomePage2();
-}
+} //Stateful Widget
 
 class _HomePage2 extends State<HomePage2> {
   @override
@@ -16,7 +16,7 @@ class _HomePage2 extends State<HomePage2> {
         centerTitle: true,
         elevation: 15,
         title: Text('Security'),
-      ),
+      ), //AppBar
 
       //
       body: Padding(
@@ -31,24 +31,24 @@ class _HomePage2 extends State<HomePage2> {
                 width: double.infinity,
                 height: 300,
                 fit: BoxFit.cover,
-              ),
-            ),
+              ), //Image.network
+            ), //ClipRRect
             const SizedBox(height: 32),
             const Text(
               'FBI',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-              ),
-            ),
+              ), //TestStyle
+            ), //Text
             const SizedBox(height: 4),
             const Text(
               'Special Forces',
               style: TextStyle(fontSize: 20),
-            ),
+            ), //Text
           ],
-        ),
-      ),
-    );
-  }
-}
+        ), //Column
+      ), //Padding
+    ); //Scaffold
+  } //build
+} //setState

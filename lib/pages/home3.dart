@@ -5,7 +5,7 @@ class HomePage3 extends StatefulWidget {
 
   @override
   State<HomePage3> createState() => _HomePage3();
-}
+} //Stateful Widget
 
 class _HomePage3 extends State<HomePage3> {
   @override
@@ -16,7 +16,7 @@ class _HomePage3 extends State<HomePage3> {
         centerTitle: true,
         elevation: 15,
         title: Text('Work'),
-      ),
+      ), //AppBar
 
       //
       body: Padding(
@@ -31,24 +31,24 @@ class _HomePage3 extends State<HomePage3> {
                 width: double.infinity,
                 height: 300,
                 fit: BoxFit.cover,
-              ),
-            ),
+              ), //Image.network
+            ), //ClipRRect
             const SizedBox(height: 32),
             const Text(
               'Workplace',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-              ),
-            ),
+              ), //TestStyle
+            ), //Text
             const SizedBox(height: 4),
             const Text(
               'Office',
               style: TextStyle(fontSize: 20),
-            ),
+            ), //Text
           ],
-        ),
-      ),
-    );
-  }
-}
+        ), //Column
+      ), //Padding
+    ); //Scaffold
+  } //build
+} //setState
