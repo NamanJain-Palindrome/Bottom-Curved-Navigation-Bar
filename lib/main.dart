@@ -1,8 +1,6 @@
-// ignore_for_file: prefer_const_constructors
-
 // importing packages
 import 'package:flutter/material.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+//importing pages
 import 'homepage.dart';
 
 void main() {

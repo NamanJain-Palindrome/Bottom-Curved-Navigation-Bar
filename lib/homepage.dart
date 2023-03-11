@@ -1,7 +1,9 @@
+//importing pages
 import 'package:bottom_nav_bar/pages/home2.dart';
 import 'package:bottom_nav_bar/pages/home3.dart';
 import 'package:bottom_nav_bar/pages/home4.dart';
 import 'package:bottom_nav_bar/pages/homepage1.dart';
+//importing packages
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
